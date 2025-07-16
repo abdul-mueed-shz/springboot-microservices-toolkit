@@ -1,0 +1,16 @@
+/Applications/Projects/Projects/Springboot/ReuseableMicroservices/toolkit/utils/src/main/java/com/abdul/toolkit/UtilsApp.java
+/Applications/Projects/Projects/Springboot/ReuseableMicroservices/toolkit/utils/src/main/java/com/abdul/toolkit/utils/linkedin/mapper/LinkedinMapper.java
+/Applications/Projects/Projects/Springboot/ReuseableMicroservices/toolkit/utils/src/main/java/com/abdul/toolkit/utils/linkedin/model/LinkedinUserInfo.java
+/Applications/Projects/Projects/Springboot/ReuseableMicroservices/toolkit/utils/src/main/java/com/abdul/toolkit/utils/linkedin/model/LinkedinUserResponse.java
+/Applications/Projects/Projects/Springboot/ReuseableMicroservices/toolkit/utils/src/main/java/com/abdul/toolkit/utils/linkedin/port/in/LinkedinApiUseCase.java
+/Applications/Projects/Projects/Springboot/ReuseableMicroservices/toolkit/utils/src/main/java/com/abdul/toolkit/utils/linkedin/usecase/LinkedinApiUseCaseImpl.java
+/Applications/Projects/Projects/Springboot/ReuseableMicroservices/toolkit/utils/src/main/java/com/abdul/toolkit/utils/model/AccessToken.java
+/Applications/Projects/Projects/Springboot/ReuseableMicroservices/toolkit/utils/src/main/java/com/abdul/toolkit/utils/model/GithubUserInfo.java
+/Applications/Projects/Projects/Springboot/ReuseableMicroservices/toolkit/utils/src/main/java/com/abdul/toolkit/utils/model/GoogleUserInfo.java
+/Applications/Projects/Projects/Springboot/ReuseableMicroservices/toolkit/utils/src/main/java/com/abdul/toolkit/utils/model/TwitterUserInfo.java
+/Applications/Projects/Projects/Springboot/ReuseableMicroservices/toolkit/utils/src/main/java/com/abdul/toolkit/utils/user/mapper/UserServiceMapper.java
+/Applications/Projects/Projects/Springboot/ReuseableMicroservices/toolkit/utils/src/main/java/com/abdul/toolkit/utils/user/model/PermissionInfo.java
+/Applications/Projects/Projects/Springboot/ReuseableMicroservices/toolkit/utils/src/main/java/com/abdul/toolkit/utils/user/model/RoleInfo.java
+/Applications/Projects/Projects/Springboot/ReuseableMicroservices/toolkit/utils/src/main/java/com/abdul/toolkit/utils/user/model/UserInfo.java
+/Applications/Projects/Projects/Springboot/ReuseableMicroservices/toolkit/utils/src/main/java/com/abdul/toolkit/utils/user/port/in/GetUserDetailServiceUseCase.java
+/Applications/Projects/Projects/Springboot/ReuseableMicroservices/toolkit/utils/src/main/java/com/abdul/toolkit/utils/user/usecase/GetUserDetailServiceUseCaseImpl.java
