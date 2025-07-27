@@ -1,7 +1,7 @@
 package com.abdul.toolkit.utils.linkedin.usecase;
 
-import com.abdul.toolkit.feign.adapter.out.web.LinkedinAuthFeignClient;
-import com.abdul.toolkit.feign.adapter.out.web.LinkedinUserInfoFeignClient;
+import com.abdul.toolkit.utils.feigns.LinkedinAuthFeignClient;
+import com.abdul.toolkit.utils.feigns.LinkedinUserInfoFeignClient;
 import com.abdul.toolkit.utils.model.AccessToken;
 import com.abdul.toolkit.utils.linkedin.mapper.LinkedinMapper;
 import com.abdul.toolkit.utils.linkedin.model.LinkedinUserResponse;

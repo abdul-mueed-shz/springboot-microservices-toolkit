@@ -1,6 +1,6 @@
-package com.abdul.toolkit.feign.adapter.out.web;
+package com.abdul.toolkit.utils.feigns;
 
-import com.abdul.admin.dto.LinkedinUserResponse;
+import com.abdul.dto.LinkedinUserResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

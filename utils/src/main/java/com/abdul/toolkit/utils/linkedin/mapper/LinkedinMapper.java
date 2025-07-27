@@ -9,8 +9,8 @@ import org.mapstruct.NullValuePropertyMappingStrategy;
 @Mapper(componentModel = "spring", nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
 public interface LinkedinMapper {
 
-    LinkedinUserResponse map(com.abdul.admin.dto.LinkedinUserResponse linkedinUserResponse);
+    LinkedinUserResponse map(com.abdul.dto.LinkedinUserResponse linkedinUserResponse);
 
     @Mapping(source = "accessToken", target = "token")
-    AccessToken map(com.abdul.admin.dto.AccessToken accessToken);
+    AccessToken map(com.abdul.dto.AccessToken accessToken);
 }

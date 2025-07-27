@@ -10,7 +10,6 @@
   <name>toolkit</name>
   <url>http://maven.apache.org</url>
   <modules>
-    <module>feign</module>
     <module>utils</module>
     <module>security</module>
   </modules>

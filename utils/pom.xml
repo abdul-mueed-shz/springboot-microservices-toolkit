@@ -16,19 +16,15 @@
   <url>http://maven.apache.org</url>
 
   <properties>
+    <openapi-generator-maven-plugin-version>7.0.1
+    </openapi-generator-maven-plugin-version> <!-- Latest version of OpenAPI Generator plugin -->
+
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <org.mapstruct.version>1.5.5.Final</org.mapstruct.version> <!-- Latest stable version of MapStruct -->
     <org.lombok.version>1.18.28</org.lombok.version> <!-- Latest version of Lombok -->
   </properties>
 
   <dependencies>
-
-    <dependency>
-      <groupId>com.abdul.toolkit</groupId>
-      <artifactId>feign</artifactId>
-      <version>1.0.0</version>
-    </dependency>
-
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-annotations</artifactId>
@@ -54,6 +50,30 @@
       <version>0.12.6</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-openfeign -->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-openfeign</artifactId>
+      <version>4.1.4</version>
+    </dependency>
+
+    <dependency>
+      <groupId>jakarta.annotation</groupId>
+      <artifactId>jakarta.annotation-api</artifactId>
+      <version>3.0.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.swagger.core.v3</groupId>
+      <artifactId>swagger-core-jakarta</artifactId>
+      <version>2.2.7</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.openapitools</groupId>
+      <artifactId>jackson-databind-nullable</artifactId>
+      <version>0.2.2</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -61,6 +81,36 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.openapitools</groupId>
+        <artifactId>openapi-generator-maven-plugin</artifactId>
+        <version>${openapi-generator-maven-plugin-version}</version>
+        <executions>
+          <execution>
+            <id>User.yaml</id>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+            <configuration>
+              <inputSpec>${project.basedir}/src/main/resources/swagger/User.yaml</inputSpec>
+              <output>${project.build.directory}/generated-sources/swagger</output>
+              <generatorName>spring</generatorName>
+              <configOptions>
+                <dateLibrary>java8</dateLibrary>
+                <useJakartaEe>true</useJakartaEe>
+              </configOptions>
+              <generateApis>false</generateApis>
+              <generateApiTests>false</generateApiTests>
+              <generateApiDocumentation>false</generateApiDocumentation>
+              <generateModels>true</generateModels>
+              <generateModelTests>false</generateModelTests>
+              <generateModelDocumentation>false</generateModelDocumentation>
+              <modelPackage>com.abdul.dto</modelPackage>
+              <generateSupportingFiles>false</generateSupportingFiles>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>

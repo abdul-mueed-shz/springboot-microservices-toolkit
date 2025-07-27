@@ -1,6 +1,6 @@
 package com.abdul.toolkit.utils.user.mapper;
 
-import com.abdul.admin.dto.UserDetailResponse;
+import com.abdul.dto.UserDetailResponse;
 import com.abdul.toolkit.utils.user.model.UserInfo;
 import java.time.LocalDateTime;
 import java.time.OffsetDateTime;
