@@ -1,4 +1,4 @@
-package com.abdul.toolkit.adapter.out.web;
+package com.abdul.toolkit.feign.adapter.out.web;
 
 import com.abdul.admin.dto.AccessToken;
 import org.springframework.cloud.openfeign.FeignClient;

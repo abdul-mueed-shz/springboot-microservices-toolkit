@@ -1,6 +1,6 @@
 package com.abdul.toolkit.utils.user.usecase;
 
-import com.abdul.toolkit.adapter.out.web.UserFeignClient;
+import com.abdul.toolkit.feign.adapter.out.web.UserFeignClient;
 import com.abdul.toolkit.utils.user.mapper.UserServiceMapper;
 import com.abdul.toolkit.utils.user.model.UserInfo;
 import com.abdul.toolkit.utils.user.port.in.GetUserDetailServiceUseCase;
