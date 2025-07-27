@@ -1,4 +1,4 @@
-package com.abdul.toolkit.security.domain.auth.port.in;
+package com.abdul.toolkit.utils.jwt.port.in;
 
 import io.jsonwebtoken.Claims;
 import java.util.Date;

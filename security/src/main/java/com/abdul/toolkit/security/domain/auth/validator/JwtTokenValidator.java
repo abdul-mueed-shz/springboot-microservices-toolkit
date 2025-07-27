@@ -1,6 +1,6 @@
 package com.abdul.toolkit.security.domain.auth.validator;
 
-import com.abdul.toolkit.security.domain.auth.port.in.ExtractJwtClaimsUseCase;
+import com.abdul.toolkit.utils.jwt.port.in.ExtractJwtClaimsUseCase;
 import java.util.Date;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
 package com.abdul.toolkit.security.domain.auth.config;
 
-import com.abdul.toolkit.security.domain.auth.port.in.ExtractJwtClaimsUseCase;
+import com.abdul.toolkit.utils.jwt.port.in.ExtractJwtClaimsUseCase;
 import com.abdul.toolkit.security.domain.auth.validator.JwtTokenValidator;
 import com.abdul.toolkit.utils.user.port.in.GetUserDetailServiceUseCase;
 import jakarta.servlet.FilterChain;

@@ -1,4 +1,4 @@
-package com.abdul.toolkit.security.domain.auth.port.in;
+package com.abdul.toolkit.utils.jwt.port.in;
 
 import com.abdul.toolkit.utils.user.model.UserInfo;
 import java.util.Map;

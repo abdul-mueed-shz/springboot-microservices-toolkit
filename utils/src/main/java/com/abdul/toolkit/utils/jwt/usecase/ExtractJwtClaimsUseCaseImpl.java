@@ -1,7 +1,7 @@
-package com.abdul.toolkit.security.domain.auth.usecase;
+package com.abdul.toolkit.utils.jwt.usecase;
 
-import com.abdul.toolkit.security.domain.auth.port.in.ExtractJwtClaimsUseCase;
-import com.abdul.toolkit.security.domain.auth.port.in.GetSignInKeyUseCase;
+import com.abdul.toolkit.utils.jwt.port.in.ExtractJwtClaimsUseCase;
+import com.abdul.toolkit.utils.jwt.port.in.GetSignInKeyUseCase;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import java.util.Date;

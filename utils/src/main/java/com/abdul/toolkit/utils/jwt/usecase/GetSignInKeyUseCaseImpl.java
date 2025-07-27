@@ -1,6 +1,6 @@
-package com.abdul.toolkit.security.domain.auth.usecase;
+package com.abdul.toolkit.utils.jwt.usecase;
 
-import com.abdul.toolkit.security.domain.auth.port.in.GetSignInKeyUseCase;
+import com.abdul.toolkit.utils.jwt.port.in.GetSignInKeyUseCase;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import javax.crypto.SecretKey;
