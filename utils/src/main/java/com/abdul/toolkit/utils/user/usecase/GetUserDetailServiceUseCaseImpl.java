@@ -2,8 +2,11 @@ package com.abdul.toolkit.utils.user.usecase;
 
 import com.abdul.toolkit.utils.feigns.UserFeignClient;
 import com.abdul.toolkit.utils.user.mapper.UserServiceMapper;
+import com.abdul.toolkit.utils.user.model.PermissionInfo;
+import com.abdul.toolkit.utils.user.model.RoleInfo;
 import com.abdul.toolkit.utils.user.model.UserInfo;
 import com.abdul.toolkit.utils.user.port.in.GetUserDetailServiceUseCase;
+import java.util.Set;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

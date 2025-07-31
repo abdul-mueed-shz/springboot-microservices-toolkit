@@ -55,7 +55,11 @@ public class UserInfo implements UserDetails, Serializable {
         }
         List<GrantedAuthority> authorities = new ArrayList<>();
         for (RoleInfo role : roles) {
-            authorities.add(new SimpleGrantedAuthority(role.getName()));
+            authorities.addAll(
+                    role.getPermissions().stream().map(
+                            permission -> new SimpleGrantedAuthority(permission.getName())
+                    ).toList()
+            );
         }
         return authorities;
     }

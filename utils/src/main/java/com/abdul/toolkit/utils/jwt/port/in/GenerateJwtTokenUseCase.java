@@ -14,4 +14,6 @@ public interface GenerateJwtTokenUseCase {
             Map<String, Object> claims,
             Map<String, Object> headers,
             Integer tokenValidity);
+
+    String generateInternalAdminToken();
 }

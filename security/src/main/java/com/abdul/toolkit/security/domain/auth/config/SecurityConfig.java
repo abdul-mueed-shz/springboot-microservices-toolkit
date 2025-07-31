@@ -25,7 +25,6 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(
-                                "/api/v1/internal/**",
                                 "/api/v1/oauth2/**",
                                 "/api/v1/auth/**",
                                 "/index.html",
@@ -37,6 +36,7 @@ public class SecurityConfig {
                                 "/images/**",
                                 "/static/**"
                         ).permitAll()
+                        .requestMatchers("/internal/**").hasAuthority("INTERNAL_ADMIN")
                         .anyRequest().authenticated()
                 )
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
